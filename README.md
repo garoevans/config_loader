@@ -11,14 +11,15 @@ This library requires PHP 5.3 or later, and is installable and autoloadable via 
 Usage
 -----
 
-    <?php
-    use Garoevans\ConfigLoader;
+```php
+use Garoevans\ConfigLoader;
 
-    $config = ConfigLoader('config_directory', 'ini_file_name.ini');
-    $config->load();
+$config = ConfigLoader('config_directory', 'ini_file_name.ini');
+$config->load();
 
-    // Gets the ini section called 'db' or returns an empty array
-    $config->get('db', array());
+// Gets the ini section called 'db' or returns an empty array
+$config->get('db', array());
 
-    // Gets the value of 'host' from the 'db' section or returns an empty string
-    $config->get('db/host', '');
+// Gets the value of 'host' from the 'db' section or returns an empty string
+$config->get('db/host', '');
+```
